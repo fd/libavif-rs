@@ -24,11 +24,6 @@ fn main() {
     if target == "x86_64-pc-windows-gnu" {
         meson.arg("--cross-file").arg("x86_64-w64-mingw32.meson");
     }
-    if target == "aarch64-unknown-linux-gnu" {
-        meson
-            .arg("--cross-file")
-            .arg("aarch64-unknown-linux-gnu.meson");
-    }
     if target == "wasm32-unknown-emscripten" {
         meson
             .arg("--cross-file")
